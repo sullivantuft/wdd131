@@ -48,3 +48,10 @@ footer{
 .logo{
     width:150px;
 }
+.dark{
+    background-color: #333;
+    color: white;
+}
+.dark h2{
+    color:#7bcbff; 
+}
