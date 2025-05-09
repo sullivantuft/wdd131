@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: 'Mooli', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-dark)
+}
+header{
+    background-color:var(--primary-color);
+    color:var(--text-light);
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+header h1{
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  margin: 0;
+}
+nav {
+  background-color: var(--primary-color);
+  padding-bottom: 1rem;
+  margin: 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  text-align: center;
+  padding: 2rem;
+}
+main h2 {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+img{
+  object-fit: cover;
+}
+footer{
+    background-color:var(--primary-color);
+    color:var(--text-light);
+    padding: 1rem;
+    text-align: left;
+}
+.menu-button{
+  display: none;
+  background-color: var(--);
+  color: var(--text-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-button{
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 700px) and (max-width: 999px) {
+  .menu-button{
+    display: block;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    
+  }
+  .nav-list{
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  
+}
