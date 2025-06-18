@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+img {
+	max-width: 100%;
+}
+:root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.social {
+    display: flex;
+    gap: 1rem; 
+}
+.social img{
+    width: 25px;
+    max-width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:x-small;
+    width: 50%;
+    
+}
+
+.recipe{
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content:left;
+    padding: .5rem;
+    
+    
+}
+ 
+.recipe-image{
+    display: flex;
+    justify-content: center;
+}  
+.recipe img{
+
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+    
+   
+}
+
+.recipe-details #tag{
+    border: 1px solid black;
+    max-width: fit-content;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    
+}
+.recipe-details > *{
+    margin: 0.25rem;
+    text-align: left;
+    
+    
+}
+.recipe-details h2{
+    font-family: 'Amatic SC', cursive;
+    color: var(--primary-color);
+}
+.recipe-details p{
+    font-size: small;
+    font-family: var(--primary-font);
+}
+.rating{
+    font-size: 10px;
+}
+.search-form {
+    width: 50%;
+    display: flex;     
+}
+.search-form input[type="text"] {
+    flex-grow: 1;        
+}
+
+@media (max-width: 600px) {
+  .recipe {
+    width: 90%;         
+    flex-direction: column; 
+  }
+  .recipe,
+  .search-form, footer {
+    width: 90%;  
+  }
+  p{
+    display: none;
+  }
+  
+} 
+@media (min-width: 961px) {
+  body, 
+  .recipe, 
+  .search-form, 
+  footer {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+}
