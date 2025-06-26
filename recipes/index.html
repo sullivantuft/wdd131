@@ -7,7 +7,7 @@
     <meta name="description" content="A collection of delicious recipes">
     <meta name="author" content="Sullivan Tuft">
     <link rel="icon" href="images/recipe-book.png" type="image/png">
-    <script src = "main.js" defer></script>
+    <script type="module" src = "main.js" defer></script>
     <link rel="stylesheet" href="recipes.css">
 
     <meta property="og:title" content="Recipe Book">
@@ -29,27 +29,7 @@
     <button type="submit">Search</button>
     </form>
 
-    <div class = "recipe">
-        <div class="recipe-image">
-            <img src="images/apple-crisp.jpg" alt="Apple Crisp">
-        </div>
-        <div class = "recipe-details">
-            <p id="tag">dessert</p>
-            <h2>Apple Crisp</h2>
-            <span
-                class="rating"
-                role="img"
-                aria-label="Rating: 4 out of 5 stars"
-            >       
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
-            <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-        </div>
-    </div>
+    <div id = recipes-container></div>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a> 
         <div class="social">
