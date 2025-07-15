@@ -165,3 +165,11 @@ iframe{
     height: auto;
     width: 300px;
 }
+.show-more-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: --var(--paragraph-font);       
+  cursor: pointer;     
+  text-decoration: underline; /
+}
